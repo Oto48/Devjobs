@@ -1,0 +1,43 @@
+<article{{ attributes }}>
+
+  <div class="px-[24px] md:px-[39px] xl:px-[355px]">
+    <div class="h-[205px] md:h-[140px] m-auto flex rounded-[6px] bg-white dark:bg-[#19202D]">
+      <div class="w-[50px] h-[50px] rounded-[15px] absolute top-0 left-[50%] -translate-x-2/4 -translate-y-2/4 md:w-[140px] md:h-[140px] md:static md:rounded-[6px] md:translate-x-0 md:translate-y-0">{{content.field_company_logo[0]}}</div>
+      <div class="flex flex-col md:flex-row m-auto md:m-0 w-[calc(100%-140px)] items-center justify-between px-[43px]">
+        <div class="flex gap-y-[13px] flex-col">
+          <p class="text-[24px] text-[#19202D] mt-[24px] md:mt-0 dark:text-white font-[700]">{{content.field_company[0]}}</p>
+          <p class="text-[16px] text-[#6E8098] mb-[27px] md:mb-0">{{content.field_site[0]}}</p>
+        </div>
+        <a href="https://{{content.field_site[0]}}" target="_blank" class="w-[147px] h-[48px] text-[#5964E0] text-[16px] bg-[#5964E0] bg-opacity-10 rounded-[5px] flex items-center justify-center font-[700]">Company Site</a>
+      </div>
+    </div>
+
+    <div class="bg-white dark:bg-[#19202D] m-auto px-[43px] py-[48px] mt-[32px] rounded-[6px] min-h-[45vh]">
+      <div class="gap-[12px] flex text-[#6E8098] dark:text-[#9DAEC2]">
+        <p class="text-[16px]">{{content.field_upload_date[0]}}</p>
+        <p class="text-[16px] font-bold">.</p>
+        <p class="text-[16px]">{{content.field_employment[0]}}</p>
+      </div>
+      <div class="flex justify-between">
+        <p class="text-[28px] text-[#19202D] dark:text-white font-[700]">{{node.label}}</p>
+        <a href="https://{{content.field_site[0]}}" target="_blank" class="hidden md:flex w-[147px] h-[48px] text-white text-[16px] bg-[#5964E0] rounded-[5px] items-center justify-center font-[700]">Apply Now</a>
+      </div>
+      <p class="text-[14px] text-[#5964E0] font-[700]">{{content.field_country[0]}}</p>
+      <a href="https://{{content.field_site[0]}}" target="_blank" class="md:hidden w-[100%] mt-[54px] h-[48px] text-white text-[16px] bg-[#5964E0] rounded-[5px] flex items-center justify-center font-[700]">Apply Now</a>
+      <div class="text-[#6E8098] dark:text-[#9DAEC2] leading-[26px] mt-[44px]">{{content.field_about[0]}}</div>
+      <p class="text-[20px] font-[700] mb-[28px] mt-[40px] text-[#19202D] dark:text-white">Requirements</p>
+      <div class="text-[#6E8098] dark:text-[#9DAEC2] [&>p]:mb-[24px] [&>ul]:list-disc [&>ul]:pl-[16px] [&>ul>li]:mb-[8px] leading-[26px]">{{content.field_requirements[0]}}</div>
+      <p class="text-[20px] font-[700] mb-[28px] mt-[40px] text-[#19202D] dark:text-white">What You Will Do</p>
+      <div class="text-[#6E8098] dark:text-[#9DAEC2] [&>p]:mb-[24px] [&>ol]:list-decimal [&>ol]:pl-[16px] [&>ol>li]:mb-[8px] [&>ol>li]:before:text-[red] leading-[26px]">{{content.field_what_you_will_do[0]}}</div>
+    </div>
+  </div>
+
+  <footer class="mt-[30px] flex justify-between items-center bg-white dark:bg-[#19202D] py-[23px] px-[24px] md:px-[35px] xl:px-[355px]">
+    <div class="hidden md:block">
+      <p class="text-[20px] text-[#19202D] dark:text-white font-[700]">{{node.label}}</p>
+      <p class="text-[16px] text-[#6E8098] dark:text-[#9DAEC2]">So Digital Inc.</p>
+    </div>
+    <a href="https://{{content.field_site[0]}}" target="_blank" class="w-[100%] md:w-[147px] h-[48px] text-white text-[16px] bg-[#5964E0] rounded-[5px] flex items-center justify-center font-[700] ">Apply Now</a>
+  </footer>
+
+</article>

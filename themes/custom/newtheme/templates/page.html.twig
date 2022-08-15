@@ -1,0 +1,24 @@
+<div class="bg-[#F2F2F2] dark:bg-[#121721] min-h-[100vh]">
+  <header class="h-[128px] rounded-bl-[100px] relative">
+    <div style="background-image: url('{{base_path ~ directory}}/images/Triangle.svg');" class="w-[100%] h-[160px] bg-no-repeat bg-cover rounded-bl-[100px] absolute">
+      <div class="flex justify-between items-center px-[24px] xl:px-[395px] mt-[44px]">
+        <h1 class="text-4xl text-white font-[700]">devjobs</h1>
+        <div class="flex justify-end items-center space-x-2">
+          <img src="{{base_path ~ directory}}/images/sun.svg" />
+          <div>
+            <div for="toggle" class="cursor-pointer" id="toggler">
+              <div class="w-[48px] h-[24px] flex items-center bg-white rounded-full p-1">
+                <div class="toggle-dot w-4 h-4 bg-[#5964E0] rounded-full shadow-md transform dark:translate-x-6 duration-300 ease-in-out" id="toggle"></div>
+              </div>
+            </div>
+          </div>
+          <img src="{{base_path ~ directory}}/images/moon.svg" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="relative">
+    {{page.content}}
+  </div>
+</div>

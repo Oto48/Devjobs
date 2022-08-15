@@ -1,0 +1,14 @@
+<?php
+
+    function my_module_theme($existing, $theme, $type, $path) {
+        return array(
+            'jobs_page'=> array(
+                'variables'=>array(
+                    'items'=>[],
+                    'title'=>''
+                )
+            )
+        );
+    }
+
+?>

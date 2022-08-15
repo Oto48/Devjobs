@@ -1,0 +1,7 @@
+my_module.content:
+  path: "/jobs"
+  defaults:
+    _controller: '\Drupal\my_module\Controller\JobsController::showContent'
+    _title: "Terms and conditions"
+  requirements:
+    _permission: "access content"

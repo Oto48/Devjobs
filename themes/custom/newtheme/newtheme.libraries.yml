@@ -1,0 +1,12 @@
+global-style:
+  version: 1.x
+  js:
+    js/script.js: {}
+  css:
+    base:
+      dist/output.css: {}
+
+fonts:
+  css:
+    theme:
+      'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap': {type: external}
